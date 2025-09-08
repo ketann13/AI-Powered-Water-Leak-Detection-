@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leak Detection Dashboard</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gaugeJS/dist/gauge.min.js"></script>
+    <script src="{{ url_for('static', filename='script.js') }}" defer></script>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+    </style>
+</head>
+<body>
+    <div class="main">
+        <h2>AI POWERED WATER LEAK AND PIPELINE DAMAGE DETECTION</h2>
+        <div class="container">
+            <canvas id="pressureGauge"></canvas>
+            <canvas id="flowGauge"></canvas>
+            <canvas id="tempGauge"></canvas>
+        </div>
+
+        <section>
+            <label>Pressure (bar):</label><br>
+            <input type="number" id="pressure" step="any"><br>
+            <label>Flow Rate (L/s):</label><br>
+            <input type="number" id="flow_rate" step="any"><br>
+            <label>Temperature (°C):</label><br>
+            <input type="number" id="temperature" step="any"><br>
+        </section>
+
+        <button onclick="predictLeak()">Predict</button>
+        <h3 id="result"></h3>
+
+        <canvas id="dataChart"></canvas>
+    </div>
+</body>
+</html>
