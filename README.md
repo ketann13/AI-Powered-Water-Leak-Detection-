@@ -57,5 +57,4 @@ You can Check out the Live demo at https://ai-powered-water-leak-detection-8.onr
 ## 👨‍💻 Author
 **Ketan Dnyaneshwar Patil**  
 📍 Pune, India  
-🎓 2nd Year Computer Engineering Student  
-💡 Passionate about Machine Learning, Competitive Programming & Full-Stack Development  
+🎓 3rd Year Computer Engineering Student  
